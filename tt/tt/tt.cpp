@@ -19,12 +19,12 @@
 // CttApp
 
 BEGIN_MESSAGE_MAP(CttApp, CWinAppEx)
-	ON_COMMAND(ID_APP_ABOUT, &CttApp::OnAppAbout)
+	//ON_COMMAND(ID_APP_ABOUT, &CttApp::OnAppAbout)
 	// 基于文件的标准文档命令
-	ON_COMMAND(ID_FILE_NEW, &CWinAppEx::OnFileNew)
-	ON_COMMAND(ID_FILE_OPEN, &CWinAppEx::OnFileOpen)
+	//ON_COMMAND(ID_FILE_NEW, &CWinAppEx::OnFileNew)
+	//ON_COMMAND(ID_FILE_OPEN, &CWinAppEx::OnFileOpen)
 	// 标准打印设置命令
-	ON_COMMAND(ID_FILE_PRINT_SETUP, &CWinAppEx::OnFilePrintSetup)
+	//ON_COMMAND(ID_FILE_PRINT_SETUP, &CWinAppEx::OnFilePrintSetup)
 END_MESSAGE_MAP()
 
 
@@ -190,22 +190,22 @@ void CttApp::OnAppAbout()
 
 // CttApp 自定义加载/保存方法
 
-void CttApp::PreLoadState()
-{
-	BOOL bNameValid;
-	CString strName;
-	bNameValid = strName.LoadString(IDS_EDIT_MENU);
-	ASSERT(bNameValid);
-	GetContextMenuManager()->AddMenu(strName, IDR_POPUP_EDIT);
-}
+//void CttApp::PreLoadState()
+//{
+//	BOOL bNameValid;
+//	CString strName;
+//	bNameValid = strName.LoadString(IDS_EDIT_MENU);
+//	ASSERT(bNameValid);
+//	GetContextMenuManager()->AddMenu(strName, IDR_POPUP_EDIT);
+//}
 
-void CttApp::LoadCustomState()
-{
-}
-
-void CttApp::SaveCustomState()
-{
-}
+//void CttApp::LoadCustomState()
+//{
+//}
+//
+//void CttApp::SaveCustomState()
+//{
+//}
 
 // CttApp 消息处理程序
 

@@ -23,9 +23,9 @@ IMPLEMENT_DYNCREATE(CttView, CView)
 
 BEGIN_MESSAGE_MAP(CttView, CView)
 	// 标准打印命令
-	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
-	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
-	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CttView::OnFilePrintPreview)
+	//ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
+	//ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
+	//ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CttView::OnFilePrintPreview)
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
 	ON_WM_LBUTTONDOWN()
@@ -70,7 +70,7 @@ CttView::CttView()
 
 	m_gameON = 0;
 	srand(time(NULL));
-	AfxMessageBox(_T("《画图and游戏最后的蓝球》\n欢迎使用本软件，本软件是一个集画图功能和游戏功能于一体的软件。\n要玩游戏请点击上面的游戏按钮。\nBy 1120310421董羽飞"));
+	AfxMessageBox(_T("《画图and游戏最后的蓝球》\n欢迎使用本软件，本软件是一个集画图功能和游戏功能于一体的软件。\n要玩游戏请点击上面的游戏按钮。\nBy 带鱼"));
 }
 
 CttView::~CttView()
